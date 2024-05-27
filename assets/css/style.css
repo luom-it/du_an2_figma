@@ -1,0 +1,535 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #2ac9bf;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  /* khoi phuc lai co chu ban dau */
+  font-size: 1.6rem;
+  /* font su dung cho toan bo trang */
+  font-family: "Poppins", sans-serif;
+}
+/* ============common============== */
+a {
+  /* bo dau gach chan */
+  text-decoration: none;
+}
+.btn {
+  display: inline-block;
+  text-align: center;
+  padding: 20px 40px;
+  min-width: 186px;
+  height: 68px;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 600;
+  border-radius: 14px;
+  background-color: #1ebfc1;
+}
+.btn:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.main-content {
+  width: 1170px;
+  /* cach hai ben trinh duyet khi thu nho 24px*/
+  max-width: calc(100% - 48px);
+  /* can giua */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* =================header================ */
+.header {
+  background: #fff;
+}
+.header.fixed {
+  position: sticky;
+  top: -44px;
+}
+
+header .body {
+  display: flex;
+  align-items: center;
+  padding: 52px 0 8px;
+}
+.nav {
+  margin-left: auto;
+}
+header .nav ul {
+  display: flex;
+}
+
+.nav a {
+  color: #2f3a3b;
+  font-size: 1.6rem;
+  padding: 8px 21px;
+}
+.nav li .home,
+.nav a:hover {
+  color: #2f3a3b;
+  /* font-weight: 600; */
+  /* thay font-weight = text-shadow */
+  text-shadow: 1px 0 0 currentColor;
+}
+header .action {
+  display: flex;
+  margin-left: 177px;
+}
+
+header .action .sign-in {
+  color: #494949;
+}
+header .btn-sign-up .sign-up {
+  background-color: #fff;
+  color: #1ebfc1;
+  text-align: center;
+  font-weight: 600;
+  min-width: 108px;
+  border-radius: 6px;
+  border: 1px solid currentColor;
+  padding: 12px 24px;
+  margin-left: 24px;
+}
+
+/* ===========================hero======================== */
+.hero {
+  padding: 54px 0 79px;
+  background-color: #fff;
+}
+.hero .body {
+  display: flex;
+}
+.hero .content-block {
+  width: 51%;
+  padding-top: 93px;
+}
+/* ===================hero-left======================= */
+.hero .content-block .desc {
+  color: #767e7e;
+  font-size: 1.4rem;
+}
+.hero .content-block .heading {
+  margin-top: 18px;
+  color: #0d1111;
+  font-size: 6.2rem;
+  font-weight: 700;
+  line-height: 1.17; /* 116.129% */
+}
+.hero .content-block .desc1 {
+  margin-top: 46px;
+  color: #9da6a5;
+  font-size: 1.8rem;
+  line-height: 1.78; /* 177.778% */
+}
+
+.hero .cta-group {
+  display: flex;
+  margin-top: 55px;
+  align-items: center;
+}
+.hero .watch-video {
+  margin-left: 50px;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.hero .watch-video .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 62px;
+  width: 62px;
+  border-radius: 50%;
+}
+
+/* ===================hero=right================ */
+.hero .content {
+  width: 49%;
+  width: 576px;
+  height: 631px;
+  position: relative;
+}
+.hero .content .img1 {
+  width: 576px;
+  height: 631px;
+  object-fit: cover;
+}
+.hero .content .item1 {
+  position: absolute;
+  bottom: 41px;
+  right: 145px;
+}
+.hero .content .item1:hover {
+  border-radius: 24px;
+  padding: 10px 10px;
+  background: #fefefd;
+  box-shadow: 0px 12px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero .content .item2 {
+  position: absolute;
+  bottom: 0;
+  left: -49px;
+}
+.hero .content .item3 {
+  position: absolute;
+  left: -40px;
+  top: 149px;
+}
+
+.hero .content .item3:hover {
+  border-radius: 18px;
+  padding: 10px 10px;
+  /* background: #fefefd; */
+  box-shadow: 0px 10px 80px 0px rgba(0, 0, 0, 0.05);
+}
+
+/* ===========feature============ */
+.heading2 {
+  color: #0d1111;
+  font-size: 4.2rem;
+  font-weight: 700;
+}
+.feature .body {
+  padding-top: 130px;
+}
+.feature span {
+  color: #767e7e;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.feature .heading2 {
+  width: 577px;
+  padding: 18px 0;
+  line-height: 1.34; /* 133.333% */
+}
+.feature .desc1 {
+  width: 590px;
+  color: #767e7e;
+  line-height: normal;
+}
+
+.feature .list {
+  padding-top: 80px;
+  display: flex;
+  align-items: center;
+}
+.feature .item .desc2 {
+  padding-top: 26px;
+  color: #0d1111;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.feature .item .desc3 {
+  padding-top: 16px;
+  color: #9da6a5;
+  font-size: 16px;
+  line-height: 2.7rem; /* 168.75% */
+}
+.feature .item .desca {
+  width: 168px;
+}
+.feature .item .descb {
+  width: 223px;
+}
+.feature .item .descc {
+  width: 224px;
+}
+.feature .item2 {
+  padding: 0 275px 0 321px;
+}
+/* ===============courses================ */
+.courses {
+  padding-top: 130px;
+}
+.courses .list {
+  display: flex;
+  gap: 47px;
+}
+.courses span {
+  color: #767e7e;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.courses .heading2 {
+  padding-top: 18px;
+  color: #0d1111;
+  font-size: 4.2rem;
+  font-weight: 700;
+}
+.courses .info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.courses .info .desc {
+  width: 525px;
+  padding-top: 19px;
+  color: #767e7e;
+  font-size: 1.8rem;
+  line-height: 1.78; /* 177.778% */
+}
+.courses .list {
+  padding-top: 79px;
+}
+.courses .list .img {
+  width: 359px;
+  height: 393px;
+  object-fit: cover;
+}
+.courses .list .img:hover {
+  opacity: 0.35;
+  background: #d0efed;
+}
+.courses .list .block {
+  padding-left: 25px;
+  width: 325px;
+  height: 195px;
+  background-color: #fff;
+}
+.courses .list .block:hover {
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 16px 90px 0px rgba(0, 0, 0, 0.05);
+}
+.courses .list .item .block .heading2 {
+  padding-top: 18px;
+  color: #0d1111;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+.courses .list .item .block .desc {
+  padding-top: 16px;
+  color: #767e7e;
+  font-size: 1.6rem;
+}
+.courses .list .item .block .desc strong {
+  color: #0d1111;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+.courses .list .item .block .desc1 {
+  padding-top: 6px;
+  color: #9da6a5;
+  font-size: 1.4rem;
+}
+.courses .list .item .block .dot {
+  padding-top: 18px;
+  display: flex;
+  gap: 5px;
+}
+.courses .list .item .block .dot .dot1 {
+  display: flex;
+}
+/* ===============courses_footer============== */
+.courses_footer {
+  padding-top: 265px;
+}
+.courses_footer .body {
+  margin-left: 156px;
+  display: flex;
+  width: 862px;
+  height: 131px;
+  justify-content: center;
+  align-items: center;
+  gap: 202px;
+}
+
+.courses_footer .item strong {
+  color: #0d1111;
+  text-align: center;
+  font-size: 6.2rem;
+  font-weight: 700;
+}
+.courses_footer .item .desc {
+  width: 153px;
+  padding-top: 11px;
+  text-align: center;
+  color: #767e7e;
+  font-size: 1.8rem;
+}
+/* ===================testimonial================= */
+.testimonial {
+  padding-top: 264px;
+}
+.testimonial .body {
+  display: flex;
+  height: 481px;
+}
+/* ben trai */
+.testimonial .body .info {
+  width: 36%;
+  position: relative;
+}
+.testimonial .body .info .desc {
+  padding-top: 27px;
+  color: #5d6564;
+  font-size: 3.2rem;
+  line-height: 1.5; /* 150% */
+}
+.testimonial .body .info .desc1 {
+  padding-top: 33px;
+  padding-left: 13px;
+  color: #767e7e;
+  font-size: 1.6rem;
+}
+.testimonial .body .info .desc1::before {
+  display: block;
+  content: "";
+  width: 8px;
+  height: 2px;
+  position: absolute;
+  bottom: 188px;
+  left: 0;
+  background: #070707;
+}
+.testimonial .body .info .desc1 span {
+  color: #070707;
+  font-weight: 500;
+}
+.testimonial .body .info .icons {
+  padding-top: 52px;
+}
+/* ben phai */
+.testimonial .body .images {
+  width: 64%;
+  position: relative;
+}
+.testimonial .body .images .img1 {
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  background-image: url(/assets/icon/e_1886_0.svg), url(/assets/icon/ee_0.svg);
+  position: absolute;
+  left: 216px;
+}
+.testimonial .body .images .img2 {
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  background-image: url(/assets/icon/e_1886_1.svg), url(/assets/icon/ee_1.svg);
+  position: absolute;
+  left: 72px;
+  top: 165px;
+}
+.testimonial .body .images .img3 {
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  background-image: url(/assets/icon/e_1886_2.svg), url(/assets/icon/ee_2.svg);
+  position: absolute;
+  left: 284px;
+  bottom: 0;
+}
+.testimonial .body .images .img4 {
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  background-image: url(/assets/icon/e_1886_3.svg), url(/assets/icon/ee_3.svg);
+  position: absolute;
+  bottom: 29px;
+  right: 32px;
+}
+.testimonial .body .images .img5 {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background-image: url(/assets/icon/e_1886_4.svg), url(/assets/icon/ee_4.svg);
+  position: absolute;
+  top: 19px;
+  right: 0;
+}
+.testimonial .body .images .img6 {
+  width: 235px;
+  height: 235px;
+  border-radius: 50%;
+  background-image: url(/assets/icon/e_1886_5.svg), url(/assets/icon/ee_5.svg);
+  position: absolute;
+  left: 345px;
+  bottom: 139px;
+}
+/* =====================CTA===================== */
+.cta {
+  margin-top: 130px;
+  height: 272px;
+  background: #def6f5;
+}
+.cta .base {
+  display: flex;
+  align-items: center;
+}
+/* ben trai */
+.cta .base .text .heading2 {
+  padding-top: 76px;
+  padding-bottom: 25px;
+  color: #070707;
+  font-size: 4.2rem;
+  font-weight: 700;
+}
+.cta .base .text .desc {
+  color: #767e7e;
+  font-size: 1.8rem;
+}
+/* ben phai */
+.cta .base .action .btn1 {
+  background: #2ac9bf;
+}
+.cta .base .action {
+  margin-left: 450px;
+  margin-top: 96px;
+}
+/* =================footer================= */
+.footer {
+  padding-top: 131px;
+}
+.footer .body {
+  position: relative;
+}
+.footer .body .logo {
+  position: absolute;
+}
+.footer .list {
+  margin-left: 271px;
+  display: flex;
+  gap: 144px;
+}
+.footer .body .item .desc1 {
+  color: #2e2e2e;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.footer .body .item .desc2 {
+  padding-top: 25px;
+}
+.footer .body .item .desc {
+  padding-top: 20px;
+  color: #535353;
+  font-size: 1.6rem;
+}
+.footer .body .item .icon1 {
+  display: flex;
+}
+.footer .body .item .icon1 .desc3 {
+  padding-left: 9px;
+  padding-top: 18px;
+}
+.footer .body .item .desc4 {
+  width: 157px;
+}
+.footer .body .item .icon1 img {
+  padding-top: 15px;
+}
+.footer .body .desc5 {
+  padding: 80px 343px 50px;
+  color: #b0b5b4;
+  font-size: 1.8rem;
+  margin: auto;
+}
